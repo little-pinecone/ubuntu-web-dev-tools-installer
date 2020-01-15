@@ -1,5 +1,3 @@
-#!/bin/bash
-docker=true
 sudo apt install \
   apt-transport-https \
   ca-certificates \

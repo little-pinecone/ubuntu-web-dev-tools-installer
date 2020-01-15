@@ -1,0 +1,5 @@
+reset_colour=$(tput sgr0)
+red=$(tput setaf 1)
+light_blue=$(tput setaf 14)
+light_green=$(tput setaf 10)
+gray=$(tput setaf 8)
