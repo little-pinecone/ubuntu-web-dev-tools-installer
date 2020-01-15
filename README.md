@@ -22,12 +22,17 @@ $ ./install.sh -h
 
 To install tools type the following command providing script file names as parameters:
 ```
-$ sudo ./install.sh openjdk nodejs
+$ sudo ./install.sh nodejs angular guake
 ```
+
+You will be prompt to accept the installation:
+
+![installer-confirm-screenshot](readme-images/installer-confirm-screenshot.png)
+
 
 To run only the verification scripts for provided tools run the following command:
 ```
-$ ./install.sh -v openjdk nodejs
+$ ./install.sh -v nodejs angular guake
 ```
 
 ### Remember
@@ -56,6 +61,8 @@ You can add your own installation and verification scripts. Remember to keep com
 * verification script: `scripts/tools/angular_verify.sh` 
 
 ## Testing
+
+__Requires [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) to be already installed on your machine.__ Checkout `scirpts/tools/docker` and run `$ ./install.sh docker` if the script satisfies your needs.
 
 The project contains `Dockerfile` and `docker-compose.yml` files to provide you with an Ubuntu18.04 instance where you can test the script. All `*.sh` files are already copied to the `/home` directory in the container.
 
@@ -102,14 +109,14 @@ In case one installation script fails, you can call the command again after fixi
 $ ./install.sh -h
 ```
 
-![keep growing logo](readme-images/installer-help-screenshot.png)
+![installer-help-screenshot](readme-images/installer-help-screenshot.png)
 
 ### Verification command
 
 ```
-$ ./install.sh -v nodejs openjdk nonexistingexample
+$ ./install.sh -v nodejs guake nonexisting
 ```
 
-![keep growing logo](readme-images/installer-verification-screenshot.png)
+![installer-help-screenshot](readme-images/installer-verify-screenshot.png)
 
 
