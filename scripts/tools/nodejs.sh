@@ -1,2 +1,2 @@
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt install nodejs -y
+curl -sL https://deb.nodesource.com/setup_12.x | bash -
+apt install nodejs -y

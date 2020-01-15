@@ -1,1 +1,1 @@
-sudo apt install guake -y
+apt install guake -y

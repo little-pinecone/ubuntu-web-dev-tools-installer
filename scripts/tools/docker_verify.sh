@@ -1,11 +1,10 @@
 echo "$light_green Docker has been installed in the following version: $reset_colour"
 echo " $(docker --version)"
-echo " Docker status:"
-echo " $(sudo systemctl is-active docker)"
+echo " Visit: $light_blue https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user $reset_colour to make sure the installation was successful."
 if [ "$test" != true ]; then
-  echo " Would you like to run test docker container?: y/n"
+  echo " Would you like to run test docker container?: y/n (n)"
   read -r decision
   if [ "$decision" = y ]; then
-    echo "$(sudo docker run hello-world)"
+    echo "$(docker run hello-world)"
   fi
 fi

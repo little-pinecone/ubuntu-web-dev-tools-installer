@@ -27,20 +27,24 @@ while getopts thv option; do
 done
 shift $((OPTIND - 1))
 
+function install_tool() {
+  if [ -e ./scripts/tools/"$file".sh ]; then
+    source ./scripts/tools/"$file".sh
+  else
+    echo "$red Installation script not found for: $file. $reset_colour"
+    echo ""
+  fi
+}
+
 tools=$@
 
 if [ "$verify_only" != true ]; then
   echo "$light_blue The following tools will be installed: $tools. Would you like to continue?: y/n (y) $reset_colour"
   read -r confirmation
   if [ "$confirmation" = y ] || [ -z "$confirmation" ]; then
-    #sudo apt update -y
+    apt update -y
     for file in $tools; do
-      if [ -e ./scripts/tools/"$file"_verify.sh ]; then
-        source ./scripts/tools/"$file".sh
-      else
-        echo "$red Installation script not found for: $file. $reset_colour"
-        echo ""
-      fi
+      install_tool
     done
   fi
 fi
