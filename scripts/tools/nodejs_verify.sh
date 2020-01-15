@@ -1,5 +1,5 @@
-echo "$light_green Node.js has been installed in the following version: $reset_colour"
+echo "$success Node.js has been installed in the following version: $reset_colour"
 echo " $(node --version)"
 echo ""
-echo "$light_green Npm has been installed in the following version: $reset_colour"
+echo "$success Npm has been installed in the following version: $reset_colour"
 echo " $(npm --version)"
