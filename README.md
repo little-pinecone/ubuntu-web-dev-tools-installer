@@ -4,7 +4,7 @@
 
 This project offers a bash script useful when you want to set up your development environment with only one command.
 
-To learn how to set up a project like this one, check out the How to install development tools on Ubuntu with a single bash command post.
+To learn how to set up a project like this one, check out the [How to install development tools on Ubuntu with a single bash command](https://keepgrowing.in/tools/how-to-install-development-tools-on-ubuntu-with-a-single-bash-command/) post.
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ To see all available options type the following command:
 $ ./install.sh -h
 ```
 
-To install tools type the following command providing script file names as parameters:
+To install tools, type the following command providing script file names as parameters:
 ```
 $ sudo ./install.sh nodejs angular guake
 ```

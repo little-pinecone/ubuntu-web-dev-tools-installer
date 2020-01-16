@@ -7,4 +7,6 @@ if [ "$test" != true ]; then
   if [ "$decision" = y ]; then
     echo "$(docker run hello-world)"
   fi
+elif [ "$test" = true ]; then
+  echo "$(docker run hello-world)"
 fi
