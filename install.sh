@@ -25,7 +25,7 @@ while getopts thv option; do
     ;;
   esac
 done
-shift $((OPTIND - 1))
+shift "$((OPTIND - 1))"
 
 function install_tool() {
   if [ -e ./scripts/tools/"$file".sh ]; then

@@ -4,7 +4,7 @@
 
 This project offers a bash script useful when you want to set up your development environment with only one command.
 
-To learn how to set up a project like this one, check out the [How to install development tools on Ubuntu with a single bash command](https://keepgrowing.in/tools/how-to-install-development-tools-on-ubuntu-with-a-single-bash-command/) post.
+To learn details about this project, check out the [How to install development tools on Ubuntu with a single bash command](https://keepgrowing.in/tools/how-to-install-development-tools-on-ubuntu-with-a-single-bash-command/) post.
 
 ## Getting Started
 
@@ -99,7 +99,8 @@ $ docker exec -it ubuntuwebdevtoolsinstaller_test_1 /bin/bash
 
 ## Troubleshooting
 
-In case one installation script fails, you can call the command again after fixing the problem. Remember to remove those parameters that were successfully installed prior the failing tool.
+1. In case one installation script fails, you can call the command again after fixing the problem. Remember to remove those parameters that were successfully installed prior the failing tool.
+2. Make sure that the `install.sh` script can be executed. If not, fix the permissions with the `chmod 744 install.sh` command
 
 ## Example screenshots
 
