@@ -1,1 +1,1 @@
-apt install openjdk-11-jdk -y
+apt install openjdk-14-jdk -y
